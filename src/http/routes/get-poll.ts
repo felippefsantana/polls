@@ -43,7 +43,7 @@ export async function getPoll(app: FastifyInstance) {
 
     return reply.send({
       poll: {
-        id: pollId.indexOf,
+        id: poll.id,
         title: poll.title,
         options: poll.options.map(option => {
           return {
